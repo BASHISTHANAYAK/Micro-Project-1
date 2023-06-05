@@ -61,18 +61,19 @@
 
             }
             #container_child1 > div:nth-child(1)>p {
-                font-family: 'Inter';
+              font-family: 'Inter Tight', sans-serif;
               font-size: 1.3em;
               line-height: 160%;
               margin-left: 12%;
              width: 60%;
             }
             #container_child1 > div:nth-child(1) b {
-              font-family: 'Inter';
-              font-size: 1.8em;
+              font-family: 'Inter Tight', sans-serif;
+              font-size: 1.7em;
               line-height: 160%;
               margin-left: 12%;
               display: block;
+            
             }
 
             #emailBox{
@@ -89,16 +90,18 @@
               width: 25%;
               height:40px;
               background: #282828;
-              border-radius: 1px;
+              border-radius: 5px;
               color: white;
               margin-left:3% ;
             }
-
+            #RegisterBox:hover{
+              cursor: pointer;
+            }
             #nospam {
              color: white;
-             font-family: 'Inter';
+             font-family: 'Inter Tight', sans-serif;
              font-size: 1em;
-             margin-left: 12%;
+        
             }
 
             #container_child2 {
@@ -144,7 +147,7 @@
         height: auto;
         width: 60px;
         margin-top: 1%;
-        margin-bottom: 6%;
+        margin-bottom: 5%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -217,6 +220,28 @@
                   }
 
             }
+            @media  (max-width: 832px){
+              #RegisterBox{
+                width: 26%;
+                height:40px;
+                font-size: 1em;
+              }
+            }
+            @media  (max-width: 832px){
+              #RegisterBox{
+                width: 26%;
+                height:40px;
+                font-size: .8em;
+              }
+            }
+            @media  (max-width:537px){
+              #RegisterBox{
+                width: 29%;
+                height:40px;
+                font-size: .7em;
+                font-weight: bold;
+              }
+            }
             @media (max-width: 453px) {
               /* Styles for medium devices */
               #container_child1 > div:nth-child(1) h1 {
@@ -287,7 +312,7 @@
               justify-content: center;
               margin-left: 23%;
             }
-
+          }
             @media (max-width: 369px) {
               /* Styles for small devices */
               #container_child1 > div:nth-child(1) h1 {
@@ -404,8 +429,68 @@
 
 
 
+                              
+                              #container_child2 {
+                                border: 3px solid black;
+                                width: 100%;
+                                height: 35%;
+                                background-color: #282828;
+                                display:grid;
+                                grid-template-rows: repeat(2,1fr);
+                              }
+                              #container_child2 div{
+                                border: 2px dotted red;
+                                width: 100%;
+                                height: auto;
+                               text-align: center;
+                              }
+                              #container_child2 li{
+                                color: #FFFFFF;
+                                list-style: none;
+                                line-height: 160%;
+                                font-family: 'Inter Tight', sans-serif;
+                                font-size: .8em;
+                               
+                  
+                              }
+                  
+                                  #container_child2_1stChild{
+                                  text-align: left;
+                            
+                                  }
+                                  #container_child2_1stChild li{
+                                  margin-left: 0%;
+                                  padding-right: 3em;
+                                  }
+                                  #container_child2_2ndChild{
+                                    text-align: left;
+                            
+                                  }
+                                  #container_child2_2ndChild li{
+                                    margin-right: 0%;
+                                    padding-right: 3em;
+                                  }
+                                  #social{
+                                    border: 1px solid red;
+                                    height: auto;
+                                    width: 60px;
+                                    margin-top: 1% 50% 0% 50%;
+                                    margin-bottom: 6%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                  }
+                                
+                                  #social img{
+                                    width: 30%;
+                                    margin-left: 5%;
+                                  }
 
-            }
+
+
+       }
+
+
     </style>
   </head>
   <body>
@@ -419,7 +504,7 @@
           </p>
           <b>Show me how it looks</b>
           <input type="email" placeholder="Your e-mail address" id="emailBox" />
-          <input type="submit" id="RegisterBox" />
+          <input type="submit" id="RegisterBox" value="Register Now" />
           <p id="nospam">Free - No Spam - No Data Sharing</p>
         </div>
 
